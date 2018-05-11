@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.kalkulator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/calculations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:fontFamily="Calibri"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:fontFamily="Calibri"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:text="1"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/button0"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button1"
+            android:layout_above="@id/button0"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button2"
+            android:layout_above="@id/button0"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/button1"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button4"
+            android:layout_above="@id/button2"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button5"
+            android:layout_above="@id/button3"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@id/button4"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button7"
+            android:layout_above="@id/button5"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_toRightOf="@id/button8"
+            android:layout_above="@id/button6"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/equalButton"
+            android:layout_width="216dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/equalButton"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/divideButton"
+            android:text="x" />
+
+        <Button
+            android:id="@+id/minusButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/multiplyButton"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/minusButton"
+            android:text="+" />
+
+    </RelativeLayout>
+
+</LinearLayout>
